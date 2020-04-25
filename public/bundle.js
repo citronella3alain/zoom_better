@@ -7643,23 +7643,6 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
     })
     .catch(err => document.write(err))
 
-checkboxTheme.addEventListener('click', () => {
-    if (checkboxTheme.checked == true) {
-        document.body.style.backgroundColor = '#212529'
-        if (document.querySelector('#muteText')) {
-            document.querySelector('#muteText').style.color = "#fff"
-        }
-
-    }
-    else {
-        document.body.style.backgroundColor = '#fff'
-        if (document.querySelector('#muteText')) {
-            document.querySelector('#muteText').style.color = "#212529"
-        }
-    }
-}
-)
-
 function CreateDiv() {
     let div = document.createElement('div')
     div.setAttribute('class', "centered")
